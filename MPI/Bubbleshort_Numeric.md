@@ -2,18 +2,14 @@
 Tugas Pemrosesan Paralel MPI Numerik
 
 # Menyiapkan Ubuntu Server dan Linux Ubuntu
-## 1. Pada setiap PC/LAPTOP menggunakan jaringan yang sama agar ip yang digunakan sama 
-## 2. Menentukan master, slave1, slave2, slave3
-## 3.	Melakukan penginstalan berikut: net-tools untuk ngecek IP, vim untuk teks editor.
+ 1. Pada setiap PC/LAPTOP menggunakan jaringan yang sama agar ip yang digunakan sama 
+ 2. Menentukan master, slave1, slave2, slave3
+ 3.	Melakukan penginstalan net-tools.
+ 4.	Melakukan pengecekan IP dengan perintah berikut:
 
-$ sudo apt install net-tools vim
-
-![image](https://github.com/Dhanims17/TugasPP_09011282126067/assets/150988829/c2520e70-5e9b-4532-ac8f-3b22e68e13b3)
-
-
-## 4.	Melakukan pengecekan IP dengan perintah berikut:
 
 $ Ifconfig
+
 | NAMA    | Master           | Slave1           | Slave2          | Slave3           |
 |---------|------------------|------------------|-----------------|------------------|
 | IP      | 192.168.102.170  | 192.168.102.215  | 192.168.102.95  | 192.168.102.236  |
@@ -22,20 +18,23 @@ $ Ifconfig
 ## 1.	Konfigurasi hosts file /etc/hosts
 - Pada Master
   
- ![WhatsApp Image 2023-11-16 at 19 14 04_0ee9b605](https://github.com/Dhanims17/TugasPP_09011282126067/assets/150988829/7b8e917c-68f1-4ae8-bba8-6facb00ecb2f)
+  ![image](https://github.com/Dhanims17/09011282126067_TugasPP/assets/150988829/5d49b47d-8f20-4985-abc7-737415886bdf)
 
 - Pada Slave1
 
-  ![WhatsApp Image 2023-11-16 at 08 58 02_dd7fa2f2](https://github.com/Dhanims17/TugasPP_09011282126067/assets/150988829/ce62c6da-2d6c-4da6-86d5-5d9fab9a28af)
+  ![WhatsApp Image 2023-11-16 at 08 58 02_f2679545](https://github.com/Dhanims17/09011282126067_TugasPP/assets/150988829/3a0e7736-9479-4deb-9793-b66eed0e3352)
+
 
 - Pada Slave2
   
-  ![WhatsApp Image 2023-11-16 at 08 49 35_762e3b49](https://github.com/Dhanims17/TugasPP_09011282126067/assets/150988829/2445b4e2-0070-44fb-acbb-2bb6766eca2a)
+  ![image](https://github.com/Dhanims17/09011282126067_TugasPP/assets/150988829/20f347fc-a353-4ff3-8401-cca8d8adc614)
+
 
 
 - Pada Slave3 
 
-  ![WhatsApp Image 2023-11-16 at 08 54 14_0da3f0fe](https://github.com/Dhanims17/TugasPP_09011282126067/assets/150988829/e8f1151d-dc2a-45cd-b6ae-e0665790fa39)
+  ![WhatsApp Image 2023-11-16 at 08 54 14_931758a3](https://github.com/Dhanims17/09011282126067_TugasPP/assets/150988829/6dff01e5-2a78-4bf1-bfd9-be444cd58f02)
+
 
 
 ## 2. Membuat User Baru
@@ -47,25 +46,25 @@ $ sudo usermod -aG sudo <nama user>
 
 $ su - <nama user>
 
-Server
+## Server
 -	Master
   
-  ![WhatsApp Image 2023-11-16 at 08 53 53_e3ddd541](https://github.com/Dhanims17/TugasPP_09011282126067/assets/150988829/bc0ce36b-07df-4933-9cf5-c7c7bb04272d)
+  ![image](https://github.com/Dhanims17/09011282126067_TugasPP/assets/150988829/c9ec4657-f974-47b6-af9c-c89828c20948)
 
-Client
+
+## Client
 -	Slave1
-  
- ![WhatsApp Image 2023-11-16 at 08 57 29_05e8c12c](https://github.com/Dhanims17/TugasPP_09011282126067/assets/150988829/bc6d8d07-a415-4077-816a-0cc90fa7f269)
 
+   ![WhatsApp Image 2023-11-16 at 08 57 29_3afc7f15](https://github.com/Dhanims17/09011282126067_TugasPP/assets/150988829/b9e47471-1fd5-4e76-9523-c16d33915f01)
 
 -	Slave2
   
-  ![WhatsApp Image 2023-11-16 at 08 57 14_d14e7c7f](https://github.com/Dhanims17/TugasPP_09011282126067/assets/150988829/766dc1f7-4527-48c6-9ed9-62c61c16bef4)
-
+   ![WhatsApp Image 2023-11-16 at 08 57 14_0a10ae23](https://github.com/Dhanims17/09011282126067_TugasPP/assets/150988829/1d1a9566-e547-4723-b421-856e7d460980)
 
 -	Slave3
   
-  ![image](https://github.com/Dhanims17/TugasPP_09011282126067/assets/150988829/60ea96df-13a7-44c8-8ce5-0502eac0bad8)
+   ![image](https://github.com/Dhanims17/09011282126067_TugasPP/assets/150988829/efa7ae48-6967-4212-8651-08178d22a5aa)
+
 
 
 ## 3. Konfigurasi SSH
