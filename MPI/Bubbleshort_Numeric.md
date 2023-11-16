@@ -76,22 +76,20 @@ $ sudo apt install openssh-server
 
 -	Pada master
 
-  ![WhatsApp Image 2023-11-16 at 09 00 19_35306ee4](https://github.com/Dhanims17/TugasPP_09011282126067/assets/150988829/b89a6d78-4623-4e6c-9def-bb20f7e4461b)
-
+  ![WhatsApp Image 2023-11-16 at 09 00 19_535c2ed5](https://github.com/Dhanims17/09011282126067_TugasPP/assets/150988829/7a5155aa-57da-4c2d-88b5-d4977112310f)
 
 -	Pada Slave1
   
-  ![WhatsApp Image 2023-11-16 at 09 01 48_fa1a5a58](https://github.com/Dhanims17/TugasPP_09011282126067/assets/150988829/a5c4d99d-2a23-4300-bfdb-d4b105680085)
-
+  ![WhatsApp Image 2023-11-16 at 09 01 48_26c97d80](https://github.com/Dhanims17/09011282126067_TugasPP/assets/150988829/ea600a7f-ff54-4163-9583-4f8be8437b71)
 
 -	Pada Slave2
 
-  ![WhatsApp Image 2023-11-16 at 09 01 51_3fbaea84](https://github.com/Dhanims17/TugasPP_09011282126067/assets/150988829/e54985ca-1c90-4540-94c4-717fa5e36d80)
-
+  ![WhatsApp Image 2023-11-16 at 09 01 51_a1af6f7b](https://github.com/Dhanims17/09011282126067_TugasPP/assets/150988829/ebd038fa-c1a8-4d62-af31-dc37e41f235c)
 
 -	Pada Slave3
 
-  ![image](https://github.com/Dhanims17/TugasPP_09011282126067/assets/150988829/469ceeee-b2dd-4eb2-99e2-e5a3b1b3893e)
+  ![image](https://github.com/Dhanims17/09011282126067_TugasPP/assets/150988829/6cdf6aee-4826-4f4b-9e4d-45c0313ae559)
+
 
 
 2. Melakukan pengecekan SSH
@@ -100,12 +98,13 @@ $ ssh nama user@host
 
 -	SSH dari Master ke Worker
 
-  ![WhatsApp Image 2023-11-16 at 09 05 53_03418604](https://github.com/Dhanims17/TugasPP_09011282126067/assets/150988829/8f5a2488-4490-457b-8de8-c7475b372fe7)
+  ![WhatsApp Image 2023-11-16 at 09 05 53_046e9c4c](https://github.com/Dhanims17/09011282126067_TugasPP/assets/150988829/1832aeec-e358-4389-b123-22dc50728b36)
 
 
 -	SSH dari Worker ke Master
 
-  ![WhatsApp Image 2023-11-16 at 09 05 04_ca498b5c](https://github.com/Dhanims17/TugasPP_09011282126067/assets/150988829/d0b7bedb-89bb-4975-8ecc-3dc8b6809256)
+  ![WhatsApp Image 2023-11-16 at 09 05 04_f5ca2868](https://github.com/Dhanims17/09011282126067_TugasPP/assets/150988829/eedac203-d67a-4821-a521-b9af2462f2dc)
+
 
 
 3. Generate Keygen
@@ -113,7 +112,7 @@ Lakukan di SERVER
 
 $ ssh-keygen -t rsa
 
-![WhatsApp Image 2023-11-16 at 09 07 41_179a221e](https://github.com/Dhanims17/TugasPP_09011282126067/assets/150988829/1d2031a4-e6e8-48ef-8900-e194f5636980)
+  ![WhatsApp Image 2023-11-16 at 09 07 41_f92a5ebc](https://github.com/Dhanims17/09011282126067_TugasPP/assets/150988829/65ff94c3-3f48-482f-b924-4bd07422d350)
 
 
 4. Copy key publik ke client
@@ -122,7 +121,7 @@ $ cd .ssh
 
 $ cat id_rsa.pub | ssh <nama user>@<host> "mkdir .ssh; cat >> .ssh/authorized_keys"
 
-![WhatsApp Image 2023-11-16 at 09 11 22_3e9ad4db](https://github.com/Dhanims17/TugasPP_09011282126067/assets/150988829/e33a2088-27ea-4178-a12f-23244ccb2dc9)
+![WhatsApp Image 2023-11-16 at 09 11 22_667e2f51](https://github.com/Dhanims17/09011282126067_TugasPP/assets/150988829/ec08cb9d-2907-4cbd-a997-6819422e9388)
 
 
 
@@ -134,43 +133,43 @@ $ mkdir banyu
 
 -	Pada Master
   
-![WhatsApp Image 2023-11-16 at 09 12 38_cf73ecae](https://github.com/Dhanims17/TugasPP_09011282126067/assets/150988829/0754d763-bd3d-41f9-8fb3-daaebe7408c3)
-
+  ![WhatsApp Image 2023-11-16 at 09 12 38_db6224be](https://github.com/Dhanims17/09011282126067_TugasPP/assets/150988829/9bc9d6d8-3951-42bd-8130-c47f02ee57d3)
 
 -	Pada Slave1
 
-  ![WhatsApp Image 2023-11-16 at 09 12 57_e8cba145](https://github.com/Dhanims17/TugasPP_09011282126067/assets/150988829/82f9a35f-82f1-47b0-9d9a-a2f559dd0f21)
-
+  ![WhatsApp Image 2023-11-16 at 09 12 57_75604aa4](https://github.com/Dhanims17/09011282126067_TugasPP/assets/150988829/c037e724-3686-4117-bc45-ed628f57996e)
 
 -	Pada Slave2
   
-  ![WhatsApp Image 2023-11-16 at 09 13 05_a5a212ea](https://github.com/Dhanims17/TugasPP_09011282126067/assets/150988829/fda3db4d-725c-4bd2-9ab6-0ed78b803080)
-
+  ![WhatsApp Image 2023-11-16 at 09 13 05_b274514a](https://github.com/Dhanims17/09011282126067_TugasPP/assets/150988829/67eb8cad-7f9b-4bb0-bc8d-18d98a94d6c8)
 
 -	Pada Slave3
-  
-![image](https://github.com/Dhanims17/TugasPP_09011282126067/assets/150988829/f46cc17f-f3a6-40c5-8424-2deeb68f7b33)
+  ![image](https://github.com/Dhanims17/09011282126067_TugasPP/assets/150988829/3fad8099-cf46-45f4-bcae-39a5690a8d99)
+
 
 
 2. Install NFS Server
 
 $ sudo apt install nfs-kernel-server
 
-![WhatsApp Image 2023-11-16 at 09 13 40_9e329462](https://github.com/Dhanims17/TugasPP_09011282126067/assets/150988829/083e6759-3406-4e42-a4d9-7f9085ecb393)
+![WhatsApp Image 2023-11-16 at 09 13 40_4f1ec2f6](https://github.com/Dhanims17/09011282126067_TugasPP/assets/150988829/da6ab4a2-50d7-4de9-af5e-1352d2abf9c9)
+
 
 
 3. Konfigurasi file /etc/exports
 
 <lokasi shared folder> *(rw,sync,no_root_squash,no_subtree_check)
 
-![WhatsApp Image 2023-11-16 at 09 14 19_50541347](https://github.com/Dhanims17/TugasPP_09011282126067/assets/150988829/e848f6c5-5484-455a-a21c-1a661b1255a0)
+![WhatsApp Image 2023-11-16 at 09 14 19_13ca38c1](https://github.com/Dhanims17/09011282126067_TugasPP/assets/150988829/002e24a5-9568-4e86-a897-05e6c1dce35f)
+
 
 
 $ sudo exportfs -a
 
 $ sudo systemctl restart nfs-kernel-server
 
-![WhatsApp Image 2023-11-16 at 09 15 21_78a04ae3](https://github.com/Dhanims17/TugasPP_09011282126067/assets/150988829/26251b12-3600-4d82-a63c-2fcb9bc361f3)
+![WhatsApp Image 2023-11-16 at 09 15 21_3cdcd1ec](https://github.com/Dhanims17/09011282126067_TugasPP/assets/150988829/4b83de68-838a-4448-96cb-9fe4679c6f5d)
+
 
 
 4. Install NFS Client
@@ -179,24 +178,25 @@ $ sudo apt install nfs-common
 
 -	Slave1
 
-  ![WhatsApp Image 2023-11-16 at 09 16 12_b6933a6a](https://github.com/Dhanims17/TugasPP_09011282126067/assets/150988829/d2727cd4-2700-4576-a561-79c36fd3685b)
+  ![WhatsApp Image 2023-11-16 at 09 16 12_f28d7014](https://github.com/Dhanims17/09011282126067_TugasPP/assets/150988829/646a25d0-d6fb-4260-a603-630fd561bad6)
 
 
 -	Slave2
 
-  ![WhatsApp Image 2023-11-16 at 09 16 31_de0c5f59](https://github.com/Dhanims17/TugasPP_09011282126067/assets/150988829/4dfb7ad0-c7da-4e53-9dba-d5de27771635)
+  ![WhatsApp Image 2023-11-16 at 09 16 31_008aa2d8](https://github.com/Dhanims17/09011282126067_TugasPP/assets/150988829/53700d30-d617-43d4-bf84-03a20fcd21c7)
 
 
 -	Slave3
   
-  ![image](https://github.com/Dhanims17/TugasPP_09011282126067/assets/150988829/5d6771ba-5448-45de-b53f-7cc72d5ee9da)
+   ![image](https://github.com/Dhanims17/09011282126067_TugasPP/assets/150988829/e72550e2-b0ed-4975-a98a-9072de141780)
 
 
 5. Mounting
 
 $ sudo mount <server host>:<lokasi shared folder di server> <lokasi shared folder di client>
 
-![WhatsApp Image 2023-11-16 at 09 17 39_7b9c23fc](https://github.com/Dhanims17/TugasPP_09011282126067/assets/150988829/aba3364f-0e06-463b-b27a-958c0cbcbab0)
+![WhatsApp Image 2023-11-16 at 09 17 39_1d2007ec](https://github.com/Dhanims17/09011282126067_TugasPP/assets/150988829/3fe7af25-ae43-4c5b-ad02-8c5958b34803)
+
 
 
 ## 6. Instalasi MPI
@@ -206,62 +206,63 @@ $ sudo apt install openmpi-bin libopenmpi-dev
 
 -	Pada Master
 
- 	![WhatsApp Image 2023-11-16 at 09 18 20_3d99ae94](https://github.com/Dhanims17/TugasPP_09011282126067/assets/150988829/276e7a6a-ec71-4c80-916c-cac030d21dd6)
+ 	![WhatsApp Image 2023-11-16 at 09 18 20_ce5dec11](https://github.com/Dhanims17/09011282126067_TugasPP/assets/150988829/b8711c84-a2b2-4dda-a175-ba5a7e428cac)
+
 
 -	Pada Slave1
 
-  ![WhatsApp Image 2023-11-16 at 09 18 51_26627774](https://github.com/Dhanims17/TugasPP_09011282126067/assets/150988829/c7317a9f-10e6-4af8-bda1-c8a0e144fb54)
+  ![WhatsApp Image 2023-11-16 at 09 18 51_d59be5ad](https://github.com/Dhanims17/09011282126067_TugasPP/assets/150988829/d545f3f5-1bbe-43d0-b753-4a20c9894e3f)
 
 
 -	Pada Slave2
 
-  ![WhatsApp Image 2023-11-16 at 09 18 42_4e1d2aae](https://github.com/Dhanims17/TugasPP_09011282126067/assets/150988829/cc1c7083-7125-4466-a454-511cecb32f74)
+  ![WhatsApp Image 2023-11-16 at 09 18 42_1253f3e4](https://github.com/Dhanims17/09011282126067_TugasPP/assets/150988829/4b6ce657-adcb-4f00-902f-9c009d7b6432)
 
 
 -	Pada Slave3
 
-  ![image](https://github.com/Dhanims17/TugasPP_09011282126067/assets/150988829/7b1a787b-cabb-4c5f-a763-5e8265e3c342)
+   ![image](https://github.com/Dhanims17/09011282126067_TugasPP/assets/150988829/e1bde2d5-6970-47a6-82bb-79c58a44d8c0)
 
 
-# Menjalankan Program Bubblesort.py
+
+# Menjalankan Program Bubblesort.py dan numeric.py
 ## 1.	Membuat Program
 
-$ touch bubblesort.py
-
-$ sudo nano bubblesort.py
-
 - bublleshort.py
-  ![WhatsApp Image 2023-11-16 at 09 21 53_c8d91ce8](https://github.com/Dhanims17/TugasPP_09011282126067/assets/150988829/8a488562-b80f-4116-83f7-05168601867c)
+  ![WhatsApp Image 2023-11-16 at 09 21 53_bd6f8c12](https://github.com/Dhanims17/09011282126067_TugasPP/assets/150988829/219a38a8-fa9e-4084-86db-d84490e6ceb4)
 
-- nmeric.py
-  ![WhatsApp Image 2023-11-16 at 10 50 02_710fce7e](https://github.com/Dhanims17/TugasPP_09011282126067/assets/150988829/1040ee95-f5e4-49bd-9360-0878b3e740bc)
+- numeric.py
+  ![WhatsApp Image 2023-11-16 at 10 50 02_92063d89](https://github.com/Dhanims17/09011282126067_TugasPP/assets/150988829/ae1f64d9-37a6-432e-a0b9-dd16c881ae1d)
+
 
 
 ## 2.	Instalasi Python
 
 $ sudo apt install python3-pip
 
-![WhatsApp Image 2023-11-16 at 09 21 32_71230188](https://github.com/Dhanims17/TugasPP_09011282126067/assets/150988829/e16f7a52-a60f-4018-9467-bd6784a341d0)
+  ![WhatsApp Image 2023-11-16 at 09 21 32_22db0afa](https://github.com/Dhanims17/09011282126067_TugasPP/assets/150988829/e1eef407-dd14-4b23-98b0-c6d7cda27c5a)
 
 
-## 3.	Eksekusi Numerik menggunakan Python
 
-$python3 numeric.py
+## 3.	Eksekusi Bubblesort dan Numerik menggunakan Python
 
-![WhatsApp Image 2023-11-16 at 10 49 27_8f805807](https://github.com/Dhanims17/TugasPP_09011282126067/assets/150988829/534afb1e-d6bd-4dc2-a823-1fb5c81f9a84)
+$ python3 numeric.py
+
+![WhatsApp Image 2023-11-16 at 10 49 27_ea3eedca](https://github.com/Dhanims17/09011282126067_TugasPP/assets/150988829/cc1f1123-a407-488a-9dda-85b3ff25f342)
+
+$ python3 bubblesort.py
+
+![WhatsApp Image 2023-11-16 at 10 44 01_3af90d40](https://github.com/Dhanims17/09011282126067_TugasPP/assets/150988829/2a7ef719-85cf-4c0a-866b-2f56c3b718dc)
+
+
+## 4. Eksekusi Bubblesort dan Numerik menggunakan MPI
 
 
 $ mpirun -np 2 -host master,slave3 phyton3 numeric.py
 
-![WhatsApp Image 2023-11-16 at 10 49 47_a5acb996](https://github.com/Dhanims17/TugasPP_09011282126067/assets/150988829/21763521-2298-425a-b648-b45eae2e202e)
-
-
-## 4. Eksekusi Bubblesort menggunakan MPI
-
-$ python3 bubblesort.py
-
-![WhatsApp Image 2023-11-16 at 10 44 01_a935f5b0](https://github.com/Dhanims17/TugasPP_09011282126067/assets/150988829/01813654-f4f1-4ba2-a145-aefb3e826f80)
+![WhatsApp Image 2023-11-16 at 10 49 47_af8541bf](https://github.com/Dhanims17/09011282126067_TugasPP/assets/150988829/0aeaa105-4622-4b06-be6e-a96041547670)
 
 $ mpirun -np 2 -host master,slave3 python3 bubblesort.py
 
-![WhatsApp Image 2023-11-16 at 10 44 16_be9eb67e](https://github.com/Dhanims17/TugasPP_09011282126067/assets/150988829/a8f5cebf-edc4-4f90-bc64-b670c8221bbf)
+![WhatsApp Image 2023-11-16 at 10 44 16_22d2313a](https://github.com/Dhanims17/09011282126067_TugasPP/assets/150988829/f175756a-3b33-4143-87dc-7523762cc4a1)
+
